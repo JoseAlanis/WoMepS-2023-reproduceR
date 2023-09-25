@@ -1,6 +1,6 @@
 ---
 title     : "Exercises: Intro to R Markdown"
-subtitle  : "Reproducible research workflows for psychologists"
+subtitle  : "Reproducible research workflows with R"
 ---
 
 ```{r child = "_setup.Rmd"}
