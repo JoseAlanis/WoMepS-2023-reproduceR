@@ -59,15 +59,15 @@ Sie sollten außerdem ein [*GitHub*](https://github.com/) einrichten oder ein Ko
 
 ## Module
 
-| Tag | Thema | Dauer | Slides | Übungen | Lösungen |
-| ---: | :---- | ------: | :----: |:-------:|:--------:|
-| 1 | System-Einrichtung & trouble shooting | ~ 1 hrs | [HTML](https://hackmd.io/@JoseAlanis/BJ-lr0pJp) |    -    |    -     |
-| 1 | Einführung | ~ 2 hrs | [HTML](https://josealanis.github.io/WoMepS-2023-reproduceR/slides/1_introduction.html#1)|   ⌛\*   |    -     |
-| 1 | R Markdown | ~ 2 hrs | ⌛ |    ⌛    |
-| 2 | papaja | ~ 1.5 hrs | ⌛ |    ⌛    |
-| 2 | Git & GitHub | ~ 1 hr | ⌛ |    ⌛    |
-| 2 | Git & RStudio | ~ 1 hr | ⌛ |    ⌛    |
-| (2) | Weitere Themen reproduzierbarer Wissenschaft | ~ 1.5 hrs | ⌛ |    ⌛    |    -     |
+| Tag | Thema | Dauer |                                                      Slides                                                       |                                                    Übungen                                                     | Lösungen |
+| ---: | :---- | ------: |:-----------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------:|:--------:|
+| 1 | System-Einrichtung & trouble shooting | ~ 1 hrs |                                  [HTML](https://hackmd.io/@JoseAlanis/BJ-lr0pJp)                                  |                                                       -                                                        |    -     |
+| 1 | Einführung | ~ 2 hrs |             [HTML](https://josealanis.github.io/WoMepS-2023-reproduceR/slides/1_introduction.html#1)              |                                                       -                                                        |    -     |
+| 1 | R Markdown | ~ 2 hrs | [HTML](https://josealanis.github.io/WoMepS-2023-reproduceR/slides/2_Intro_RMarkdown.html#1) /  [PDF](https://github.com/JoseAlanis/WoMepS-2023-reproduceR/blob/main/exercises/intro_to_markdown.pdf) | [R-Skript](https://github.com/JoseAlanis/WoMepS-2023-reproduceR/blob/main/exercises/Template_R-Skript.R) / [HTML](https://josealanis.github.io/WoMepS-2023-reproduceR/exercises/2_rmarkdown_question.html) |
+| 2 | papaja | ~ 1.5 hrs |                                                         ⌛                                                         |                                                       ⌛                                                        |
+| 2 | Git & GitHub | ~ 1 hr |                                                         ⌛                                                         |                                                       ⌛                                                        |
+| 2 | Git & RStudio | ~ 1 hr |                                                         ⌛                                                         |                                                       ⌛                                                        |
+| (2) | Weitere Themen reproduzierbarer Wissenschaft | ~ 1.5 hrs |                                                         ⌛                                                         |                                                       ⌛                                                        |    -     |
 
 
 \*⌛: Wird später freigeschaltet.
