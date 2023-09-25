@@ -70,9 +70,9 @@ Before we start, we need to set up the developing environment for the workshop
 
 That includes creating...
 
-- a [*GitHub*](https://github.com/) account
-- an account for the [KU Leuven *GitLab*](https://gitlab.kuleuven.be/)
-- access credentials for *GitHub* (HTTPS, PAT) and *GitLab* (SSH)
+- Checking your R-setup (see [here](https://hackmd.io/CfIgc1S0QhOX4dvxd37QOg?view))
+- (Optional) Installing Git see ([instructions](https://happygitwithr.com/install-git.html))
+- Creating a [GitHub](https://github.com) Account
 
 ---
 
