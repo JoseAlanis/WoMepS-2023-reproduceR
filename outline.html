@@ -1535,61 +1535,55 @@ div.tocify {
 
 
 <hr />
-<div id="learning-objectives" class="section level2">
-<h2>Learning objectives</h2>
-<p>Upon course completion, participants should</p>
-<ol style="list-style-type: decimal">
-<li>be familiar with key concepts of reproducible research</li>
-<li>be able to choose the appropriate tools to implement a tailored workflow</li>
-<li>have gained basic proficiency of Git, LaTeX, R Markdown, and <code>papaja</code></li>
-<li>be able to manage projects and collaborate using Git and GitHub</li>
-</ol>
+<div id="voraussetzungen" class="section level2">
+<h2>Voraussetzungen</h2>
+<p>Teilnehmerinnen und Teilnehmer sollten grundlegende Kenntnisse in R und etwas Erfahrung mit RStudio haben.</p>
 </div>
-<div id="prerequisites" class="section level2">
-<h2>Prerequisites</h2>
-<p>Participants should have some basic knowledge of R have used R Studio before.</p>
-<hr />
-</div>
-<div id="preparations" class="section level1">
-<h1>Preparations</h1>
-<p>To make the most of our time, we recommend that you prepare for the workshop by installing the following software ahead of time.</p>
-<p><em>Please note that these preparations will require some time to complete. Please do not delay them to the last moment before the workshop.</em></p>
+<div id="vorbereitungen" class="section level1">
+<h1>Vorbereitungen</h1>
 <div id="r-and-rstudio" class="section level3">
 <h3>R and RStudio</h3>
-<p>Please ensure that you are using a recent version of R (<span class="math inline">\(\geq\)</span> 4.0.0) and RStudio.</p>
+<p>Bitte stellen Sie sicher, dass Sie eine aktuelle Version von R (≥ 4.0.0) und RStudio verwenden.</p>
 </div>
 <div id="latex" class="section level3">
 <h3>LaTeX</h3>
-<p>To enable <code>papaja</code>’s full set of features you need a <a href="http://de.wikipedia.org/wiki/TeX">TeX</a> distribution. We recommend that you use <a href="https://yihui.name/tinytex/">TinyTex</a>, a LaTeX distribution designed for use with R Markdown. TinyTex can be installed from within R as follows.</p>
+<p>Um das vollständige Funktionsset von <code>papaja</code> nutzen zu können, benötigen Sie eine <a href="http://de.wikipedia.org/wiki/TeX">TeX</a>-Distribution. Wir empfehlen, dass Sie <a href="https://yihui.name/tinytex/">TinyTex</a> verwenden, eine LaTeX-Distribution, die für die Verwendung mit R Markdown konzipiert ist. TinyTex kann wie folgt innerhalb von R installiert werden.</p>
 <pre class="r"><code># If necessary, install tinytex R package
 if(!requireNamespace(&quot;tinytex&quot;, quietly = TRUE)) install.packages(&quot;tinytex&quot;)
 
 # Install TinyTex distribution
 tinytex::install_tinytex()</code></pre>
-<p>If you prefer, you may also use <a href="http://miktex.org/">MikTeX</a> for Windows, <a href="https://tug.org/mactex/">MacTeX</a> for Mac, or <a href="http://www.tug.org/texlive/">TeX Live</a> for Linux. Refer to the <a href="https://crsh.github.io/papaja_man/introduction.html#getting-started"><code>papaja</code> manual</a> for instructions.</p>
+<p>Falls Sie möchten, können Sie auch <a href="http://miktex.org/">MikTeX</a> für Windows, <a href="https://tug.org/mactex/">MacTeX</a> für Mac oder <a href="http://www.tug.org/texlive/">TeX Live</a> für Linux verwenden. Beziehen Sie sich ebenfalls auf das <a href="https://crsh.github.io/papaja_man/introduction.html#getting-started"><code>papaja</code> manual</a> für Anweisungen.</p>
 <div id="papaja" class="section level4">
 <h4><code>papaja</code></h4>
-<p><code>papaja</code> is not yet available on CRAN but you can install it from this repository:</p>
-<pre class="r"><code># Install remotes package if necessary
-if(!requireNamespace(&quot;remotes&quot;, quietly = TRUE)) install.packages(&quot;remotes&quot;)
-
-# Install the latest development snapshot from GitHub
-remotes::install_github(&quot;crsh/papaja&quot;)</code></pre>
+<p><code>papaja</code> kann folgendermaßen installiert werden:</p>
+<pre class="r"><code># Install latest CRAN release
+install.packages(&quot;papaja&quot;)</code></pre>
 </div>
 </div>
 <div id="git-and-github" class="section level3">
 <h3>Git and GitHub</h3>
-<p>We will use Git for version control (change tracking) and as a tool for collaboration. The following steps may be daunting at first, but the linked-to instructions are excellent and should get you set up in no time. You can do it! :)</p>
-<p>In preparation, please</p>
+:::warning
+<div style="text-align: center">
+🚧 <br>
+<p>
+<b>Achtung.</b><br> Das Einrichten eines GitHub-Kontos ist für diesen Workshop <strong>nicht zwingend notwendig</strong>. Bei Bedarf kann GitHub während des Workshops eingerichtet werden.
+</p>
+<pre><code>&lt;/div&gt;</code></pre>
+<p>:::</p>
+<p>Wir werden Git für die Versionskontrolle (Änderungsnachverfolgung) und als Werkzeug für die Zusammenarbeit verwenden. Die folgenden Schritte können zunächst entmutigend sein, aber die verlinkten Anleitungen sind ausgezeichnet und sollten Ihnen helfen, sich schnell einzurichten. Sie schaffen das! :)</p>
+<p>Gehen Sie folgendermaßen vor:</p>
 <ol style="list-style-type: decimal">
-<li>create a <a href="https://github.com">GitHub</a> account</li>
-<li>install Git (see <a href="https://happygitwithr.com/install-git.html">instructions</a>)
+<li>Erstellen Sie ein <a href="https://github.com">GitHub</a>-Konto</li>
+<li>Installieren Sie Git (see <a href="https://happygitwithr.com/install-git.html">instructions</a>)</li>
+</ol>
 <ul>
-<li>During installation of Git, add <code>git bash</code> to the Windows context menu by selecting its option (this should be the default)</li>
-</ul></li>
-<li>configure Git (see <a href="https://happygitwithr.com/hello-git.html">instructions</a>)</li>
-<li>create a personal access token for HTTPS (see <a href="https://happygitwithr.com/https-pat.html">instructions</a>)</li>
-<li>confirm that you can connect to GitHub (see <a href="https://happygitwithr.com/push-pull-github.html">instructions</a>)</li>
+<li>Während der Installation von Git, fügen Sie <code>git bash</code> zum Windows-Kontextmenü hinzu, indem Sie die entsprechende Option auswählen (dies sollte die Standardeinstellung sein)</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>Konfigurieren Sie Git (see <a href="https://happygitwithr.com/hello-git.html">instructions</a>)</li>
+<li>Erstellen Sie einen persönlichen Zugriffstoken für HTTPS (see <a href="https://happygitwithr.com/https-pat.html">instructions</a>)</li>
+<li>bestätigen Sie, dass Sie eine Verbindung zu GitHub herstellen können (see <a href="https://happygitwithr.com/push-pull-github.html">instructions</a>)</li>
 </ol>
 </div>
 </div>

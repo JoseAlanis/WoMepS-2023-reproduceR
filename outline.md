@@ -1,5 +1,5 @@
 ---
-title: Workshop "Reproduzierbare Forschung in der Praxis mit R (preparations)"
+title: ""
 subtitle: "Workshop outline"
 author  : "José C. García Alanis"
 
@@ -7,28 +7,29 @@ date    : "25.-26.09.2023"
 location: "Goethe-Universität Frankfurt"
 
 abstract: |
-  Seit mehreren Jahren sieht sich die psychologische Wissenschaft einer Vertrauenskrise gegenüber, die durch Bedenken bezüglich niedriger Erfolgsraten bei der Replikation empirischer Ergebnisse befeuert wird. Verschiedene Lösungen wurden vorgeschlagen, um dieses Problem anzugehen. Ein Schlüsselfaktor bei diesen Bemühungen ist die Steigerung der Transparenz und der computergestützten Reproduzierbarkeit psychologischer Forschung. Obwohl transparente und computergestützt reproduzierbare Forschung nicht zwangsläufig besser replizierbar ist, erleichtert sie Replikationsversuche und trägt dazu bei, Vertrauen in empirische Ergebnisse zu schaffen. Das sich entwickelnde Open-Science-Ökosystem bietet eine Vielzahl von Werkzeugen und Diensten, die zur Implementierung reproduzierbarer Forschungspraktiken genutzt werden können. Die Navigation im wachsenden Raum der Werkzeuge und Praktiken kann jedoch eine entmutigende Aufgabe sein.
+  For several years, psychological science has been facing a crisis of confidence fueled by concerns about low rates of successful replications of empirical findings.
+  Different solutions have been proposed to address this issue.
+  A key factor in these efforts is increasing transparency and computational reproducibility of psychological research.
+  While transparent and computationally reproducible research is not necessarily more replicable, it facilitates replication attempts and helps to foster trust in empirical findings.
+  The evolving open science ecosystem provides a variety of tools and services that can be used to implement reproducible research practices.
+  Navigating the growing space of tools and practices, however, can be a daunting task.
 
-  Daher ist das Ziel dieses zweitägigen Workshops, Forscherinnen und Forschern die wesentlichen Komponenten maßgeschneiderter, reproduzierbarer Forschungsabläufe sowie die Werkzeuge für deren Umsetzung vorzustellen. Durch die Kombination von Vorträgen mit praktischen Hands-On-Sitzungen wird der Workshop den Schwerpunkt auf Datenanalyse, Ergebnisberichterstattung und Datenaustausch legen. Im Hinblick auf den Werkzeugstapel wird der Workshop die Versionskontrolle mit Git und das Erstellen von Berichten mit R Markdown als Schlüsselkomponenten eines reproduzierbaren Forschungsablaufs abdecken.
+  Hence, the purpose of this 2 days workshop is to introduce researchers to the essential components of tailored reproducible research workflows as well as the tools for implementing them.
+  Combining lectures with practical hands-on sessions, the workshop will focus on data analysis, reporting of results, and sharing data and materials.
+  Regarding the tool stack, the workshop will cover version control with Git and writing reports with RMarkdown as key components of a reproducible research workflow, but will also introduce other tools, such as the Open Science Framework (OSF), Docker, and Binder.
 
 output:
-html_document:
-keep_md       : true
-theme         : "spacelab"
-df_print      : "kable"
-toc           : true
-toc_float     : true
+  html_document:
+    keep_md       : true
+    theme         : "spacelab"
+    df_print      : "kable"
+    toc           : true
+    toc_float     : true
 ---
 
-# Workshop "Reproduzierbare Forschung in der Praxis mit R"
 
-[José C. García Alanis](https://methoden.amd.psychologie.uni-mainz.de/jose-c-garcia-alanis/)
-[Abteilung für Analyse und Modellierung komplexer Daten](https://methoden.amd.psychologie.uni-mainz.de/)\
-Psychologisches Institut
-Johannes Gutenberg-Universität Mainz
-Wallstraße 3, Raum 06-255\
-D-55122 Mainz\
-[jose.alanis at uni-mainz.de](jose.alanis@uni-mainz.de)
+
+---
 
 ## Voraussetzungen
 
@@ -73,7 +74,7 @@ install.packages("papaja")
 ### Git and GitHub
 
 :::warning
-<div style="text-align: center"> 🚧 
+<div style="text-align: center"> 🚧
     <br>
     <p>
         <b>Achtung.</b><br>
@@ -90,7 +91,8 @@ Gehen Sie folgendermaßen vor:
 
 1. Erstellen Sie ein [GitHub](https://github.com)-Konto
 2. Installieren Sie Git (see [instructions](https://happygitwithr.com/install-git.html))
-   - Während der Installation von Git, fügen Sie `git bash` zum Windows-Kontextmenü hinzu, indem Sie die entsprechende Option auswählen (dies sollte die Standardeinstellung sein)
+ - Während der Installation von Git, fügen Sie `git bash` zum Windows-Kontextmenü hinzu, indem Sie die entsprechende Option auswählen (dies sollte die Standardeinstellung sein)
 3. Konfigurieren Sie Git (see [ instructions](https://happygitwithr.com/hello-git.html))
 4. Erstellen Sie einen persönlichen Zugriffstoken für HTTPS (see [instructions](https://happygitwithr.com/https-pat.html))
 5. bestätigen Sie, dass Sie eine Verbindung zu GitHub herstellen können (see [instructions](https://happygitwithr.com/push-pull-github.html))
+

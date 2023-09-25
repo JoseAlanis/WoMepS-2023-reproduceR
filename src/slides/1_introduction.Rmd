@@ -16,16 +16,17 @@ exclude: true
 
 # About me
 
-[José C. García Alanis](https://methoden.amd.psychologie.uni-mainz.de/jose-c-garcia-alanis/) ([jose.alanis@uni-mainz.de](mailto:jose.alanis@uni-mainz.de), [@frederikaust](http://twitter.com/JoiAlhaniz))
+[José C. García Alanis](https://methoden.amd.psychologie.uni-mainz.de/jose-c-garcia-alanis/) ([jose.alanis@uni-mainz.de](mailto:jose.alanis@uni-mainz.de), [@JoiAlhaniz](http://twitter.com/JoiAlhaniz))
 
 - PostDoc with Prof. Dr. Anna-Lena Schubert at the University of Mainz, Germany
 
 --
-    - Mathematical models of learning and memory
-    - Bayesian statistics
-    - Computational reproducibility
+    - Standardisation & validation of data preprocessing and analysis pipelines
+    - Electrophysiological correlates (e.g., EEG) of adaptive behaviour
+    - Brain imaging in clinical psychology and diagnostic
 --
-- Author and contributor to several R packages<br> (e.g., [`afex`](https://cran.r-project.org/web/packages/afex/index.html), [`citr`](https://cran.r-project.org/web/packages/citr/index.html), [`papaja`](https://github.com/crsh/papaja))
+- R, Python and Open Science enthusiast
+- Author of [Einführung in R](https://amd-lab.github.io/R-Kurs-Buch/) (R-course at the Uni Mainz)
 
 ---
 
@@ -42,9 +43,7 @@ exclude: true
 
 Slides and material are available at
 
-.center[
-http://frederikaust.com/reproducible-research-practices-workshop
-]
+.center[https://github.com/JoseAlanis/WoMepS-2023-reproduceR]
 
 - The workshop consists of a combination of lectures and hands-on exercises
 - Feel free to ask questions anytime
@@ -58,18 +57,18 @@ Did you have any trouble with the setup for this workshop?
 
 Installing...
 
-- [`git`](https://git-scm.com/)
 - [`R`](https://www.r-project.org/) & [*RStudio*](https://www.rstudio.com/products/rstudio/)
 - a `TeX` distribution (e.g., [TinyTeX](https://yihui.name/tinytex/))
 - [`papaja`](https://github.com/crsh/papaja)
+- [`git`](https://git-scm.com/)
 
 ---
 
 # Preliminaries
 
-Did you have any trouble with the setup for this workshop?
+Before we start, we need to set up the developing environment for the workshop
 
-Creating...
+That includes creating...
 
 - a [*GitHub*](https://github.com/) account
 - an account for the [KU Leuven *GitLab*](https://gitlab.kuleuven.be/)
@@ -79,13 +78,13 @@ Creating...
 
 ## Course schedule
 
-.center[**Wednesday, April 27th, 2022**]
+.center[**Monday, September 25th, 2023**]
 
-```{r schedule Wed, echo = F}
+```{r schedule Mon-1, echo = F}
 schedule <- data.frame(
-  "When?" = c("10:00 - 12:00", "12:00 - 13:00", "13:00 - 15:00", "15:00 - 15:30", "15:30 - 17:30")
+  "When?" = c("09:00 - 10:30", "10:30 - 11:00", "11:00 - 12:30", "12:30 - 13:30")
   , "&nbsp;" = "&nbsp;"
-  , "What?" = c("Introduction: Reproducible Workflows", "<i>Lunch break</i>", "Introduction to R Markdown", "<i>Coffee break</i>", "papaja")
+  , "What?" = c("Setting up for the Workshop", "<i>Coffee break</i>", "Introduction", "<i>Lunch break</i>")
   , check.names = FALSE
 )
 knitr::kable(
@@ -100,13 +99,13 @@ knitr::kable(
 
 ## Course schedule
 
-.center[**Thursday, April 28th, 2022**]
+.center[**Monday, September 25th, 2023**]
 
-```{r schedule Thur-1, echo = F}
+```{r schedule Mon-2, echo = F}
 sharing_options <- data.frame(
-  "When?" = c("09:00 - 10:15", "10:15 - 10:30", "10:30 - 11:30", "11:30 - 12:30")
+  "When?" = c("13:30 - 15:30", "15:30 - 16:00", "16:00 - 17:00")
   , "&nbsp;" = "&nbsp;"
-  , "What?" = c("Introduction to Git & GitHub", "<i>Coffee break</i>", "Git in RStudio", "Git & GitHub for collaboration - Part 1")
+  , "What?" = c("Introduction to Markdown", "<i>Coffee break</i>", "papaja (introduction)")
   , check.names = FALSE
 )
 knitr::kable(
@@ -121,12 +120,12 @@ knitr::kable(
 
 ## Course schedule
 
-.center[**Thursday, April 28th, 2022**]
-```{r schedule Thur-2, echo = F}
+.center[**Tuesday, September 16, 2023**]
+```{r schedule Tue-1, echo = F}
 sharing_options <- data.frame(
-  "When?" = c("12:30 - 13:30", "13:30 - 14:00", "14:00 - 14:15", "14:15 - 15:30", "15:30 - 16:00")
+  "When?" = c("09:00 - 10:00", "10:00 - 10:30", "10:00 - 12:30", "12:30 - 13:30")
   , "&nbsp;" = "&nbsp;"
-  , "What?" = c("<i>Lunch break</i>", "Git & GitHub for collaboration - Part 2", "<i>Coffee break</i>", "Other tools & workflows", "Wrap-Up")
+  , "What?" = c("Papaja (hands on 1)", "<i>Coffee break</i>", "either: Papaja (hands on 2) or Git", "<i>Lunch break</i>")
   , check.names = FALSE
 )
 knitr::kable(
@@ -138,6 +137,30 @@ knitr::kable(
 ```
 
 ---
+
+---
+
+.center[**Tuesday, September 16, 2023**]
+```{r schedule Tue-2, echo = F}
+sharing_options <- data.frame(
+  "When?" = c("13:30 - 15:00", "15:00 - 15:30", "15:30 - 17:00")
+  , "&nbsp;" = "&nbsp;"
+  , "What?" = c("Git & GitHub for collaboration - Part 2", "<i>Coffee break</i>", "Other tools & workflows; Wrap-Up")
+  , check.names = FALSE
+)
+knitr::kable(
+  sharing_options
+  , format = "html"
+  , align = "ll"
+  , escape = FALSE
+)
+```
+
+---
+
+
+
+
 
 # What is reproducibility?
 
@@ -223,7 +246,7 @@ knitr::include_graphics("img/reproducibility-schema-1.png")
 
 # Research management practices
 
-There are quite a few practices that researchers can adopt to increase the reproducibility of their work.
+There are quite a few practices that researchers can adopt in order to increase the reproducibility of their work.
 
 - [Project-oriented workflow](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
 - [Folder structures](https://psych-transparency-guide.uni-koeln.de/folder-structure.html)

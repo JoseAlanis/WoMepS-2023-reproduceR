@@ -1053,16 +1053,17 @@ exclude: true
 
 # About me
 
-[José C. García Alanis](https://methoden.amd.psychologie.uni-mainz.de/jose-c-garcia-alanis/) ([jose.alanis@uni-mainz.de](mailto:jose.alanis@uni-mainz.de), [@frederikaust](http://twitter.com/JoiAlhaniz))
+[José C. García Alanis](https://methoden.amd.psychologie.uni-mainz.de/jose-c-garcia-alanis/) ([jose.alanis@uni-mainz.de](mailto:jose.alanis@uni-mainz.de), [@JoiAlhaniz](http://twitter.com/JoiAlhaniz))
 
 - PostDoc with Prof. Dr. Anna-Lena Schubert at the University of Mainz, Germany
 
 --
-    - Mathematical models of learning and memory
-    - Bayesian statistics
-    - Computational reproducibility
+    - Standardisation &amp; validation of data preprocessing and analysis pipelines
+    - Electrophysiological correlates (e.g., EEG) of adaptive behaviour
+    - Brain imaging in clinical psychology and diagnostic
 --
-- Author and contributor to several R packages&lt;br&gt; (e.g., [`afex`](https://cran.r-project.org/web/packages/afex/index.html), [`citr`](https://cran.r-project.org/web/packages/citr/index.html), [`papaja`](https://github.com/crsh/papaja))
+- R, Python and Open Science enthusiast
+- Author of [Einführung in R](https://amd-lab.github.io/R-Kurs-Buch/) (R-course at the Uni Mainz)
 
 ---
 
@@ -1079,9 +1080,7 @@ exclude: true
 
 Slides and material are available at
 
-.center[
-http://frederikaust.com/reproducible-research-practices-workshop
-]
+.center[https://github.com/JoseAlanis/WoMepS-2023-reproduceR]
 
 - The workshop consists of a combination of lectures and hands-on exercises
 - Feel free to ask questions anytime
@@ -1095,18 +1094,18 @@ Did you have any trouble with the setup for this workshop?
 
 Installing...
 
-- [`git`](https://git-scm.com/)
 - [`R`](https://www.r-project.org/) &amp; [*RStudio*](https://www.rstudio.com/products/rstudio/)
 - a `TeX` distribution (e.g., [TinyTeX](https://yihui.name/tinytex/))
 - [`papaja`](https://github.com/crsh/papaja)
+- [`git`](https://git-scm.com/)
 
 ---
 
 # Preliminaries
 
-Did you have any trouble with the setup for this workshop?
+Before we start, we need to set up the developing environment for the workshop
 
-Creating...
+That includes creating...
 
 - a [*GitHub*](https://github.com/) account
 - an account for the [KU Leuven *GitLab*](https://gitlab.kuleuven.be/)
@@ -1116,7 +1115,7 @@ Creating...
 
 ## Course schedule
 
-.center[**Wednesday, April 27th, 2022**]
+.center[**Monday, September 25th, 2023**]
 
 &lt;table&gt;
  &lt;thead&gt;
@@ -1128,19 +1127,116 @@ Creating...
  &lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; 10:00 - 12:00 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; 09:00 - 10:30 &lt;/td&gt;
    &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; Introduction: Reproducible Workflows &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Setting up for the Workshop &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; 12:00 - 13:00 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; 10:30 - 11:00 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; &lt;i&gt;Coffee break&lt;/i&gt; &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; 11:00 - 12:30 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Introduction &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; 12:30 - 13:30 &lt;/td&gt;
    &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
    &lt;td style=&quot;text-align:left;&quot;&gt; &lt;i&gt;Lunch break&lt;/i&gt; &lt;/td&gt;
   &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+## Course schedule
+
+.center[**Monday, September 25th, 2023**]
+
+&lt;table&gt;
+ &lt;thead&gt;
   &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; 13:00 - 15:00 &lt;/td&gt;
+   &lt;th style=&quot;text-align:left;&quot;&gt; When? &lt;/th&gt;
+   &lt;th style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/th&gt;
+   &lt;th style=&quot;text-align:left;&quot;&gt; What? &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; 13:30 - 15:30 &lt;/td&gt;
    &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; Introduction to R Markdown &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Introduction to Markdown &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; 15:30 - 16:00 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; &lt;i&gt;Coffee break&lt;/i&gt; &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; 16:00 - 17:00 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; papaja (introduction) &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+## Course schedule
+
+.center[**Tuesday, September 16, 2023**]
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style=&quot;text-align:left;&quot;&gt; When? &lt;/th&gt;
+   &lt;th style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/th&gt;
+   &lt;th style=&quot;text-align:left;&quot;&gt; What? &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; 09:00 - 10:00 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Papaja (hands on 1) &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; 10:00 - 10:30 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; &lt;i&gt;Coffee break&lt;/i&gt; &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; 10:00 - 12:30 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; either: Papaja (hands on 2) or Git &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; 12:30 - 13:30 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; &lt;i&gt;Lunch break&lt;/i&gt; &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+
+---
+
+.center[**Tuesday, September 16, 2023**]
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style=&quot;text-align:left;&quot;&gt; When? &lt;/th&gt;
+   &lt;th style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/th&gt;
+   &lt;th style=&quot;text-align:left;&quot;&gt; What? &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; 13:30 - 15:00 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Git &amp; GitHub for collaboration - Part 2 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style=&quot;text-align:left;&quot;&gt; 15:00 - 15:30 &lt;/td&gt;
@@ -1148,94 +1244,18 @@ Creating...
    &lt;td style=&quot;text-align:left;&quot;&gt; &lt;i&gt;Coffee break&lt;/i&gt; &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; 15:30 - 17:30 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; 15:30 - 17:00 &lt;/td&gt;
    &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; papaja &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Other tools &amp; workflows; Wrap-Up &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
 ---
 
-## Course schedule
 
-.center[**Thursday, April 28th, 2022**]
 
-&lt;table&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style=&quot;text-align:left;&quot;&gt; When? &lt;/th&gt;
-   &lt;th style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/th&gt;
-   &lt;th style=&quot;text-align:left;&quot;&gt; What? &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; 09:00 - 10:15 &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; Introduction to Git &amp; GitHub &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; 10:15 - 10:30 &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; &lt;i&gt;Coffee break&lt;/i&gt; &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; 10:30 - 11:30 &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; Git in RStudio &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; 11:30 - 12:30 &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; Git &amp; GitHub for collaboration - Part 1 &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
 
----
-
-## Course schedule
-
-.center[**Thursday, April 28th, 2022**]
-&lt;table&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style=&quot;text-align:left;&quot;&gt; When? &lt;/th&gt;
-   &lt;th style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/th&gt;
-   &lt;th style=&quot;text-align:left;&quot;&gt; What? &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; 12:30 - 13:30 &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; &lt;i&gt;Lunch break&lt;/i&gt; &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; 13:30 - 14:00 &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; Git &amp; GitHub for collaboration - Part 2 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; 14:00 - 14:15 &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; &lt;i&gt;Coffee break&lt;/i&gt; &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; 14:15 - 15:30 &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; Other tools &amp; workflows &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; 15:30 - 16:00 &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; &amp;nbsp; &lt;/td&gt;
-   &lt;td style=&quot;text-align:left;&quot;&gt; Wrap-Up &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
----
 
 # What is reproducibility?
 
@@ -1309,7 +1329,7 @@ exclude: true
 
 # Research management practices
 
-There are quite a few practices that researchers can adopt to increase the reproducibility of their work.
+There are quite a few practices that researchers can adopt in order to increase the reproducibility of their work.
 
 - [Project-oriented workflow](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
 - [Folder structures](https://psych-transparency-guide.uni-koeln.de/folder-structure.html)
