@@ -5,17 +5,6 @@ description: |
 image: https://raw.githubusercontent.com/crsh/reproducible-research-practices-workshop/main/src/slides/img/Rlogo.png
 ---
 
-:::info
-<div style="text-align: center"> 🚧 
-    <br>
-    <p>
-        <b>Dies ist ein "lebendiges" Dokument.</b><br>
-        Es ist möglich, dass einige Aktuallisierungen und Ergänzungen nach dem ersten Seminar-Block vorgenommen werden.
-    </p>
-    </div>
-
-:::
-
 # Workshop "Reproduzierbare Forschung in der Praxis mit R"
 
 [José C. García Alanis](https://methoden.amd.psychologie.uni-mainz.de/jose-c-garcia-alanis/)
