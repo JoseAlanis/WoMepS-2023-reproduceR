@@ -7,16 +7,10 @@ date    : "25.-26.09.2023"
 location: "Goethe-Universität Frankfurt"
 
 abstract: |
-  For several years, psychological science has been facing a crisis of confidence fueled by concerns about low rates of successful replications of empirical findings.
-  Different solutions have been proposed to address this issue.
-  A key factor in these efforts is increasing transparency and computational reproducibility of psychological research.
-  While transparent and computationally reproducible research is not necessarily more replicable, it facilitates replication attempts and helps to foster trust in empirical findings.
-  The evolving open science ecosystem provides a variety of tools and services that can be used to implement reproducible research practices.
-  Navigating the growing space of tools and practices, however, can be a daunting task.
+  Seit mehreren Jahren sieht sich die psychologische Wissenschaft einer Vertrauenskrise gegenüber, die durch Bedenken bezüglich niedriger Erfolgsraten bei der Replikation empirischer Ergebnisse befeuert wird. Verschiedene Lösungen wurden vorgeschlagen, um dieses Problem anzugehen. Ein Schlüsselfaktor bei diesen Bemühungen ist die Steigerung der Transparenz und der computergestützten Reproduzierbarkeit psychologischer Forschung. Obwohl transparente und computergestützt reproduzierbare Forschung nicht zwangsläufig besser replizierbar ist, erleichtert sie Replikationsversuche und trägt dazu bei, Vertrauen in empirische Ergebnisse zu schaffen. Das sich entwickelnde Open-Science-Ökosystem bietet eine Vielzahl von Werkzeugen und Diensten, die zur Implementierung reproduzierbarer Forschungspraktiken genutzt werden können. Die Navigation im wachsenden Raum der Werkzeuge und Praktiken kann jedoch eine entmutigende Aufgabe sein.
 
-  Hence, the purpose of this 2 days workshop is to introduce researchers to the essential components of tailored reproducible research workflows as well as the tools for implementing them.
-  Combining lectures with practical hands-on sessions, the workshop will focus on data analysis, reporting of results, and sharing data and materials.
-  Regarding the tool stack, the workshop will cover version control with Git and writing reports with RMarkdown as key components of a reproducible research workflow, but will also introduce other tools, such as the Open Science Framework (OSF), Docker, and Binder.
+  Daher ist das Ziel dieses zweitägigen Workshops, Forscherinnen und Forschern die wesentlichen Komponenten maßgeschneiderter, reproduzierbarer Forschungsabläufe sowie die Werkzeuge für deren Umsetzung vorzustellen. Durch die Kombination von Vorträgen mit praktischen Hands-On-Sitzungen wird der Workshop den Schwerpunkt auf Datenanalyse, Ergebnisberichterstattung und Datenaustausch legen. Im Hinblick auf den Werkzeugstapel wird der Workshop die Versionskontrolle mit Git und das Erstellen von Berichten mit R Markdown als Schlüsselkomponenten eines reproduzierbaren Forschungsablaufs abdecken.
+
 
 output:
   html_document:
@@ -27,11 +21,9 @@ output:
     toc_float     : true
 ---
 
-
-
 ---
 
-## Voraussetzungen
+# Voraussetzungen
 
 Teilnehmerinnen und Teilnehmer sollten grundlegende Kenntnisse in R und etwas Erfahrung mit RStudio haben.
 
@@ -73,16 +65,10 @@ install.packages("papaja")
 
 ### Git and GitHub
 
-:::warning
-<div style="text-align: center"> 🚧
-    <br>
-    <p>
-        <b>Achtung.</b><br>
-    Das Einrichten eines GitHub-Kontos ist für diesen Workshop **nicht zwingend notwendig**. Bei Bedarf kann GitHub während des Workshops eingerichtet werden.
-    </p>
-    </div>
+> [!IMPORTANT]
+> 🚧
+> Das Einrichten eines GitHub-Kontos ist für diesen Workshop **nicht zwingend notwendig**. Bei Bedarf kann GitHub während des Workshops eingerichtet werden.
 
-:::
 
 
 Wir werden Git für die Versionskontrolle (Änderungsnachverfolgung) und als Werkzeug für die Zusammenarbeit verwenden. Die folgenden Schritte können zunächst entmutigend sein, aber die verlinkten Anleitungen sind ausgezeichnet und sollten Ihnen helfen, sich schnell einzurichten. Sie schaffen das! :)

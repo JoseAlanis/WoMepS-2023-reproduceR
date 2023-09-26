@@ -5,6 +5,10 @@ description: |
 image: https://raw.githubusercontent.com/crsh/reproducible-research-practices-workshop/main/src/slides/img/Rlogo.png
 ---
 
+> [!NOTE]
+> **Dies ist ein "lebendiges" Dokument.**
+> Es ist möglich, dass einige Aktualisierungen und Ergänzungen nach dem ersten Seminar-Block vorgenommen werden.
+
 # Workshop "Reproduzierbare Forschung in der Praxis mit R"
 
 [José C. García Alanis](https://methoden.amd.psychologie.uni-mainz.de/jose-c-garcia-alanis/)
@@ -43,31 +47,24 @@ Für die Hands-On-Teile des Workshops müssen Sie [`R`](https://www.r-project.or
 
 ### Zusätzliche Funktionalität
 
-:::warning
-<div style="text-align: center"> 🚧 
-    <br>
-    <p>
-        <b>Achtung.</b><br>
-        Das Einrichten eines GitHub-Kontos ist für diesen Workshop <b>nicht zwingend notwendig</b>. Bei Bedarf kann GitHub während des Workshops eingerichtet werden.
-    </p>
-    </div>
-
-:::
+> [!IMPORTANT]
+> 🚧 
+> Das Einrichten eines GitHub-Kontos ist für diesen Workshop <b>nicht zwingend notwendig</b>. Bei Bedarf kann GitHub während des Workshops eingerichtet werden.
 
 Sie sollten außerdem ein [*GitHub*](https://github.com/) einrichten oder ein Konto für die von Ihrer Einrichtung gehostete GitLab-Instanz (falls vorhanden und Sie es nutzen möchten). Zur Einrichtung von `Git` und *GitHub* für die Nutzung mit *RStudio* beziehen Sie sich auf [*Happy Git and GitHub for the useR*](https://happygitwithr.com/).
 
 
 ## Module
 
-| Tag | Thema | Dauer |                                                      Slides                                                       |                                                    Übungen                                                     | Lösungen |
-| ---: | :---- | ------: |:-----------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------:|:--------:|
-| 1 | System-Einrichtung & trouble shooting | ~ 1 hrs |                                  [HTML](https://hackmd.io/@JoseAlanis/BJ-lr0pJp)                                  |                                                       -                                                        |    -     |
-| 1 | Einführung | ~ 2 hrs |             [HTML](https://josealanis.github.io/WoMepS-2023-reproduceR/slides/1_introduction.html#1)              |                                                       -                                                        |    -     |
+| Tag | Thema |   Dauer |                                                                                                Slides                                                                                                |                                                    Übungen                                                     | Lösungen |
+| ---: | :---- |--------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------:|:--------:|
+| 1 | System-Einrichtung & trouble shooting | ~ 1 hrs |                                                                           [HTML](https://hackmd.io/@JoseAlanis/BJ-lr0pJp)                                                                            |                                                       -                                                        |    -     |
+| 1 | Einführung | ~ 2 hrs |                                                       [HTML](https://josealanis.github.io/WoMepS-2023-reproduceR/slides/1_introduction.html#1)                                                       |                                                       -                                                        |    -     |
 | 1 | R Markdown | ~ 2 hrs | [HTML](https://josealanis.github.io/WoMepS-2023-reproduceR/slides/2_Intro_RMarkdown.html#1) /  [PDF](https://github.com/JoseAlanis/WoMepS-2023-reproduceR/blob/main/exercises/intro_to_markdown.pdf) | [R-Skript](https://github.com/JoseAlanis/WoMepS-2023-reproduceR/blob/main/exercises/Template_R-Skript.R) / [HTML](https://josealanis.github.io/WoMepS-2023-reproduceR/exercises/2_rmarkdown_question.html) |
-| 2 | papaja | ~ 1.5 hrs |                                                         ⌛                                                         |                                                       ⌛                                                        |
-| 2 | Git & GitHub | ~ 1 hr |                                                         ⌛                                                         |                                                       ⌛                                                        |
-| 2 | Git & RStudio | ~ 1 hr |                                                         ⌛                                                         |                                                       ⌛                                                        |
-| (2) | Weitere Themen reproduzierbarer Wissenschaft | ~ 1.5 hrs |                                                         ⌛                                                         |                                                       ⌛                                                        |    -     |
+| 2 | papaja | ~ 2 hrs |                                                                                               [HTML](https://josealanis.github.io/WoMepS-2023-reproduceR/slides/3_papaja.html#1)                                                                                               |                                                       ⌛                                                        |
+| 2 | Git & GitHub |  ~ 1 hr |                                                                                                  ⌛                                                                                                   |                                                       ⌛                                                        |
+| 2 | Git & RStudio |  ~ 1 hr |                                                                                                  ⌛                                                                                                   |                                                       ⌛                                                        |
+| (2) | Weitere Themen reproduzierbarer Wissenschaft | ~ 1 hrs |                                                                                                  ⌛                                                                                                   |                                                       ⌛                                                        |    -     |
 
 
 \*⌛: Wird später freigeschaltet.
