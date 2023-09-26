@@ -23,12 +23,18 @@ output:
 
 ---
 
-# Voraussetzungen
+# Workshop "Reproduzierbare Forschung in der Praxis mit R"
+
+Seit mehreren Jahren sieht sich die psychologische Wissenschaft einer Vertrauenskrise gegenüber, die durch Bedenken bezüglich niedriger Erfolgsraten bei der Replikation empirischer Ergebnisse befeuert wird. Verschiedene Lösungen wurden vorgeschlagen, um dieses Problem anzugehen. Ein Schlüsselfaktor bei diesen Bemühungen ist die Steigerung der Transparenz und der computergestützten Reproduzierbarkeit psychologischer Forschung. Obwohl transparente und computergestützt reproduzierbare Forschung nicht zwangsläufig besser replizierbar ist, erleichtert sie Replikationsversuche und trägt dazu bei, Vertrauen in empirische Ergebnisse zu schaffen. Das sich entwickelnde Open-Science-Ökosystem bietet eine Vielzahl von Werkzeugen und Diensten, die zur Implementierung reproduzierbarer Forschungspraktiken genutzt werden können. Die Navigation im wachsenden Raum der Werkzeuge und Praktiken kann jedoch eine entmutigende Aufgabe sein.
+
+Daher ist das Ziel dieses zweitägigen Workshops, Forscherinnen und Forschern die wesentlichen Komponenten maßgeschneiderter, reproduzierbarer Forschungsabläufe sowie die Werkzeuge für deren Umsetzung vorzustellen. Durch die Kombination von Vorträgen mit praktischen Hands-On-Sitzungen wird der Workshop den Schwerpunkt auf Datenanalyse, Ergebnisberichterstattung und Datenaustausch legen. Im Hinblick auf den Werkzeugstapel wird der Workshop die Versionskontrolle mit Git und das Erstellen von Berichten mit R Markdown als Schlüsselkomponenten eines reproduzierbaren Forschungsablaufs abdecken.
+
+## Voraussetzungen
 
 Teilnehmerinnen und Teilnehmer sollten grundlegende Kenntnisse in R und etwas Erfahrung mit RStudio haben.
 
 
-# Vorbereitungen
+## Vorbereitungen
 
 ### R and RStudio
 
@@ -53,7 +59,7 @@ Falls Sie möchten, können Sie auch [MikTeX](http://miktex.org/) für Windows, 
 Beziehen Sie sich ebenfalls auf das [`papaja` manual](https://crsh.github.io/papaja_man/introduction.html#getting-started) für Anweisungen.
 
 
-#### `papaja`
+### `papaja`
 
 `papaja` kann folgendermaßen installiert werden:
 
@@ -68,8 +74,6 @@ install.packages("papaja")
 > [!IMPORTANT]
 > 🚧
 > Das Einrichten eines GitHub-Kontos ist für diesen Workshop **nicht zwingend notwendig**. Bei Bedarf kann GitHub während des Workshops eingerichtet werden.
-
-
 
 Wir werden Git für die Versionskontrolle (Änderungsnachverfolgung) und als Werkzeug für die Zusammenarbeit verwenden. Die folgenden Schritte können zunächst entmutigend sein, aber die verlinkten Anleitungen sind ausgezeichnet und sollten Ihnen helfen, sich schnell einzurichten. Sie schaffen das! :)
 

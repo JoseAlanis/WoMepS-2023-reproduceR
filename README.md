@@ -41,7 +41,7 @@ Nach Abschluss des Kurses sollten die Teilnehmerinnen und Teilnehmer
 
 Teilnehmerinnen und Teilnehmer sollten grundlegende Kenntnisse in R und etwas Erfahrung mit RStudio haben.
 
-### Sofware und R-Pakete
+### Software und R-Pakete
 
 Für die Hands-On-Teile des Workshops müssen Sie [`R`](https://www.r-project.org/) (Version 4.0.0 oder höher), [`Git`](https://git-scm.com/), [*RStudio*](https://www.rstudio.com/products/rstudio/download/) sowie die R-Pakete [`tinytex`](https://yihui.org/tinytex/) und [`papaja`](https://github.com/crsh/papaja).  installieren.
 
